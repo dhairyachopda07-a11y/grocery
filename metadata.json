@@ -1,0 +1,6 @@
+{
+  "name": "FreshBasket - Online Grocery Store",
+  "description": "FreshBasket is India's premier online grocery store delivering fresh farm produce, dairy, staples, snacks, and household essentials to your doorstep.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
