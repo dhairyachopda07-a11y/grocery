@@ -43,7 +43,7 @@ export const NewsletterSection: React.FC = () => {
           <div className="mt-6 p-4 bg-emerald-50 border border-emerald-200 rounded-2xl max-w-md mx-auto text-emerald-800 text-xs flex items-center justify-center gap-2">
             <Check className="w-4 h-4 text-emerald-600" />
             <span className="font-semibold">
-              Thank you for subscribing! Your ₹100 welcome coupon code is <strong className="text-emerald-950">FRESH100</strong>.
+              Thank you for subscribing! Your ₹100 welcome coupon code is <strong className="text-emerald-950">KANCHAN100</strong>.
             </span>
           </div>
         ) : (

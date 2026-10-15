@@ -18,7 +18,7 @@ export const CustomerReviews: React.FC = () => {
             Loved by Conscious Indian Households
           </h2>
           <p className="text-xs sm:text-sm text-stone-500 mt-1">
-            Real families, real kitchens. Here is what demo shoppers love about FreshBasket.
+            Real families, real kitchens. Here is what demo shoppers love about Kanchan Super Market.
           </p>
         </div>
 

@@ -25,7 +25,7 @@ export const FeaturedBlogSection: React.FC<FeaturedBlogSectionProps> = ({
               Fresh Insights & Cooking Guides
             </span>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-stone-900 tracking-tight">
-              From the FreshBasket Journal
+              From the Kanchan Super Market Journal
             </h2>
             <p className="text-xs sm:text-sm text-stone-500 mt-1">
               Practical guides on healthy eating, pantry storage science, and delicious everyday Indian cooking.

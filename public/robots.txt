@@ -1,4 +1,4 @@
-# FreshBasket robots.txt
+# Kanchan Super Market robots.txt
 User-agent: *
 Allow: /
 Allow: /shop
@@ -12,4 +12,4 @@ Allow: /contact
 Disallow: /checkout
 Disallow: /cart
 
-Sitemap: https://freshbasket.in/sitemap.xml
+Sitemap: https://grocery-two-pi.vercel.app/sitemap.xml

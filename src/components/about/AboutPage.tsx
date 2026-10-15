@@ -20,7 +20,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onShopNow }) => {
             Nourishing India with Authentic, Honest Groceries
           </h1>
           <p className="text-sm sm:text-base text-stone-600 leading-relaxed">
-            FreshBasket was founded with a singular conviction: that every Indian family deserves unadulterated food harvested with dignity, delivered at peak freshness, and priced with fair transparency.
+            Kanchan Super Market was founded with a singular conviction: that every Indian family deserves unadulterated food harvested with dignity, delivered at peak freshness, and priced with fair transparency.
           </p>
         </div>
 
@@ -34,7 +34,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onShopNow }) => {
               Traditional grocery supply chains in India pass vegetables and grains through four to six intermediate mandis. By the time leafy greens or seasonal fruits reach your local neighborhood cart, they have been harvested 4 to 6 days prior, losing over 40% of their natural vitamin C and crisp sweetness.
             </p>
             <p>
-              FreshBasket eliminates these middlemen. By operating localized collection centers in prime agricultural belts—from the fertile tomato plains of Kolar to the mango orchards of Ratnagiri and apple terraces of Shimla—produce harvested at 5:00 AM arrives in our temperature-controlled urban hubs by midnight, ready for your 7:00 AM breakfast table.
+              Kanchan Super Market eliminates these middlemen. By operating localized collection centers in prime agricultural belts—from the fertile tomato plains of Kolar to the mango orchards of Ratnagiri and apple terraces of Shimla—produce harvested at 5:00 AM arrives in our temperature-controlled urban hubs by midnight, ready for your 7:00 AM breakfast table.
             </p>
             <div className="pt-2 flex items-center gap-6 text-xs text-stone-900 font-bold">
               <div>

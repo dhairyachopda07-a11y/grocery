@@ -53,7 +53,7 @@ export const BlogListingPage: React.FC<BlogListingPageProps> = ({
         <nav className="text-xs text-stone-500 mb-6 flex items-center gap-1.5">
           <button onClick={onNavigateHome} className="hover:text-emerald-700">Home</button>
           <span>/</span>
-          <span className="font-semibold text-stone-800">FreshBasket Journal & Guides</span>
+          <span className="font-semibold text-stone-800">Kanchan Super Market Journal & Guides</span>
         </nav>
 
         {/* Hero Header */}
@@ -62,7 +62,7 @@ export const BlogListingPage: React.FC<BlogListingPageProps> = ({
             Food Wisdom · Storage Science · Everyday Recipes
           </span>
           <h1 className="text-3xl sm:text-4xl font-extrabold text-stone-900 tracking-tight">
-            The FreshBasket Journal
+            The Kanchan Super Market Journal
           </h1>
           <p className="text-xs sm:text-sm text-stone-600 mt-2">
             Expert practical guides crafted by nutritionists, agriculturalists, and home chefs to help you get the most out of every rupee and vegetable in your kitchen.

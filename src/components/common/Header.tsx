@@ -99,7 +99,7 @@ export const Header: React.FC<HeaderProps> = ({ currentView, onNavigate }) => {
             <span className="inline-flex items-center gap-1 bg-emerald-800/80 px-2 py-0.5 rounded text-[11px] text-emerald-200 uppercase font-semibold">
               <Percent className="w-3 h-3" /> Offer
             </span>
-            <span>Free 2-Hour Express Delivery on orders above ₹499 · Use code <strong className="text-white underline decoration-emerald-400">FRESH100</strong> for ₹100 off</span>
+            <span>Free 2-Hour Express Delivery on orders above ₹499 · Use code <strong className="text-white underline decoration-emerald-400">KANCHAN100</strong> for ₹100 off</span>
           </div>
           <button 
             onClick={() => setIsPromoDismissed(true)}
@@ -119,17 +119,18 @@ export const Header: React.FC<HeaderProps> = ({ currentView, onNavigate }) => {
           <div className="flex items-center gap-6">
             <button 
               onClick={() => onNavigate('home')}
-              className="flex items-center gap-2 group text-left"
+              className="flex items-center gap-2.5 group text-left shrink-0"
             >
-              <div className="w-10 h-10 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-extrabold text-xl shadow-sm group-hover:bg-emerald-700 transition-colors">
-                F
+              <div className="w-10 h-10 rounded-xl bg-emerald-700 text-white flex items-center justify-center shadow-sm group-hover:bg-emerald-800 transition-colors relative overflow-hidden border border-emerald-600">
+                <span className="font-extrabold text-xl text-amber-300">K</span>
+                <span className="absolute -bottom-1 -right-1 w-3.5 h-3.5 bg-amber-400 rounded-full" />
               </div>
               <div>
-                <span className="text-2xl font-bold tracking-tight text-stone-900 block leading-none">
-                  Fresh<span className="text-emerald-600">Basket</span>
+                <span className="text-xl sm:text-2xl font-extrabold tracking-tight text-stone-900 block leading-tight">
+                  Kanchan <span className="text-emerald-700 font-extrabold">Super Market</span>
                 </span>
-                <span className="text-[10px] uppercase font-semibold tracking-wider text-stone-500 mt-0.5 block">
-                  Farm Fresh · Supermarket
+                <span className="text-[10px] uppercase font-semibold tracking-wider text-stone-500 block">
+                  Fresh Groceries · Daily Essentials
                 </span>
               </div>
             </button>

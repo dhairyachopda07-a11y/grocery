@@ -70,14 +70,14 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenSitemap }) => 
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 rounded-lg bg-emerald-600 text-white flex items-center justify-center font-bold text-lg">
-                F
+                K
               </div>
               <span className="text-xl font-bold tracking-tight text-white">
-                Fresh<span className="text-emerald-400">Basket</span>
+                Kanchan <span className="text-emerald-400">Super Market</span>
               </span>
             </div>
             <p className="text-xs text-stone-400 leading-relaxed pr-6">
-              FreshBasket is an online grocery platform dedicated to bringing regional Indian agricultural harvests directly into modern urban homes. We partner with over 450 certified farmer collectives to deliver unadulterated staples, seasonal fruits, fresh dairy, and authentic kitchen essentials.
+              Kanchan Super Market is an online grocery platform dedicated to bringing regional Indian agricultural harvests directly into modern urban homes. We partner with over 450 certified farmer collectives to deliver unadulterated staples, seasonal fruits, fresh dairy, and authentic kitchen essentials.
             </p>
             
             {/* Demo Notice Banner */}
@@ -113,7 +113,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenSitemap }) => 
               </li>
               <li>
                 <button onClick={() => onNavigate('blog')} className="hover:text-white transition-colors">
-                  FreshBasket Journal (12 Articles)
+                  Kanchan Super Market Journal (12 Articles)
                 </button>
               </li>
             </ul>
@@ -125,7 +125,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenSitemap }) => 
             <ul className="space-y-2 text-xs">
               <li>
                 <button onClick={() => onNavigate('about')} className="hover:text-white transition-colors">
-                  About FreshBasket
+                  About Kanchan Super Market
                 </button>
               </li>
               <li>
@@ -166,7 +166,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenSitemap }) => 
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-emerald-400 shrink-0" />
-                <span>care@freshbasket-demo.in</span>
+                <span>care@kanchansupermarket.com</span>
               </div>
               <p className="text-[11px] pt-1 text-stone-400">
                 Operating Hours: 06:00 AM – 11:00 PM IST (All 7 Days)
@@ -178,7 +178,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenSitemap }) => 
 
         {/* Bottom Copyright Strip */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-400 gap-4">
-          <p>© 2026 FreshBasket Groceries Pvt. Ltd. All rights reserved.</p>
+          <p>© 2026 Kanchan Super Market. All rights reserved.</p>
           <div className="flex items-center gap-6">
             <span>FSSAI Lic. No: 11224334000987 (Demo)</span>
             <span>Made with Indian Farm Fresh Quality</span>

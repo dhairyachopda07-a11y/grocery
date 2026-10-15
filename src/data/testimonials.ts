@@ -14,7 +14,7 @@ export const TESTIMONIALS: Testimonial[] = [
     id: 'test-2',
     name: 'Rajesh Kulkarni',
     city: 'Kothrud, Pune',
-    quote: 'Finding genuine GI-tagged Ratnagiri Alphonso mangoes online is usually hit-or-miss. FreshBasket delivered ripe, naturally fragranced boxes on the exact same morning without any carbide ripening.',
+    quote: 'Finding genuine GI-tagged Ratnagiri Alphonso mangoes online is usually hit-or-miss. Kanchan Super Market delivered ripe, naturally fragranced boxes on the exact same morning without any carbide ripening.',
     rating: 5,
     verifiedTag: 'Demo Shopper Feedback · 8 Orders Placed',
     avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80'

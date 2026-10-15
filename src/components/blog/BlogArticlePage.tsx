@@ -38,7 +38,7 @@ export const BlogArticlePage: React.FC<BlogArticlePageProps> = ({
     if (!post) return;
 
     const originalTitle = document.title;
-    const articleTitle = `${post.seoTitle} | FreshBasket Journal`;
+    const articleTitle = `${post.seoTitle} | Kanchan Super Market Journal`;
     document.title = articleTitle;
     window.scrollTo({ top: 0, behavior: 'smooth' });
 
@@ -52,7 +52,7 @@ export const BlogArticlePage: React.FC<BlogArticlePageProps> = ({
     // 2. Canonical URL
     let canonicalLink = document.querySelector('link[rel="canonical"]');
     const originalCanonical = canonicalLink?.getAttribute('href') || '';
-    const currentOrigin = window.location.origin || 'https://freshbasket.in';
+    const currentOrigin = window.location.origin || 'https://grocery-two-pi.vercel.app';
     const canonicalUrl = `${currentOrigin}/blog/${post.slug}`;
     if (canonicalLink) {
       canonicalLink.setAttribute('href', canonicalUrl);
@@ -89,7 +89,7 @@ export const BlogArticlePage: React.FC<BlogArticlePageProps> = ({
       },
       'publisher': {
         '@type': 'Organization',
-        'name': 'FreshBasket',
+        'name': 'Kanchan Super Market',
         'logo': {
           '@type': 'ImageObject',
           'url': 'https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1200&q=80'
@@ -126,12 +126,12 @@ export const BlogArticlePage: React.FC<BlogArticlePageProps> = ({
   };
 
   const handleShareWhatsApp = () => {
-    const text = encodeURIComponent(`Read "${post.title}" on FreshBasket: ${window.location.href}`);
+    const text = encodeURIComponent(`Read "${post.title}" on Kanchan Super Market: ${window.location.href}`);
     window.open(`https://api.whatsapp.com/send?text=${text}`, '_blank');
   };
 
   const handleShareTwitter = () => {
-    const text = encodeURIComponent(`Helpful grocery guide: "${post.title}" via @FreshBasket`);
+    const text = encodeURIComponent(`Helpful grocery guide: "${post.title}" via @KanchanSuperMarket`);
     window.open(`https://twitter.com/intent/tweet?text=${text}&url=${encodeURIComponent(window.location.href)}`, '_blank');
   };
 

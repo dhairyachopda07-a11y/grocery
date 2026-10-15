@@ -17,7 +17,7 @@ export const SitemapModal: React.FC<SitemapModalProps> = ({ isOpen, onClose }) =
 
   if (!isOpen) return null;
 
-  const baseUrl = 'https://freshbasket.in';
+  const baseUrl = 'https://grocery-two-pi.vercel.app';
   const currentDate = new Date().toISOString().split('T')[0];
 
   // XML Sitemap string
@@ -84,7 +84,7 @@ ${BLOG_POSTS.map(b => `  <url>
   </url>`).join('\n')}
 </urlset>`;
 
-  const robotsTxt = `# FreshBasket robots.txt
+  const robotsTxt = `# Kanchan Super Market robots.txt
 User-agent: *
 Allow: /
 Allow: /shop
@@ -103,9 +103,9 @@ Sitemap: ${baseUrl}/sitemap.xml`;
   const schemaJson = JSON.stringify({
     "@context": "https://schema.org",
     "@type": "GroceryStore",
-    "name": "FreshBasket",
+    "name": "Kanchan Super Market",
     "image": "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1200&q=80",
-    "description": "Online supermarket delivering farm-fresh fruits, vegetables, dairy, and authentic Indian groceries.",
+    "description": "Online supermarket delivering farm-fresh fruits, vegetables, dairy, and authentic Indian groceries at Kanchan Super Market.",
     "currenciesAccepted": "INR",
     "paymentAccepted": "Cash on Delivery, UPI, Debit Card, Credit Card",
     "priceRange": "₹₹",

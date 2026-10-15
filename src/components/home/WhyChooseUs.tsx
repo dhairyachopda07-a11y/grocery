@@ -31,10 +31,10 @@ export const WhyChooseUs: React.FC = () => {
         
         <div className="text-center max-w-2xl mx-auto mb-12">
           <span className="text-xs font-bold text-emerald-700 uppercase tracking-wider block mb-1">
-            The FreshBasket Promise
+            The Kanchan Super Market Promise
           </span>
           <h2 className="text-2xl sm:text-3xl font-extrabold text-stone-900 tracking-tight">
-            Why Discerning Families Trust FreshBasket
+            Why Discerning Families Trust Kanchan Super Market
           </h2>
           <p className="text-xs sm:text-sm text-stone-500 mt-2">
             Built on transparency, sustainability, and respect for domestic culinary traditions.

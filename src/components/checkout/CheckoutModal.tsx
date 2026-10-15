@@ -78,7 +78,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({ onOrderSuccess }) 
     setIsSubmitting(true);
 
     setTimeout(() => {
-      const orderId = `FB-${Math.floor(100000 + Math.random() * 900000)}`;
+      const orderId = `KSM-${Math.floor(100000 + Math.random() * 900000)}`;
       const newOrder: OrderDetails = {
         orderId,
         items: [...cart],

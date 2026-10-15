@@ -2,141 +2,141 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Core Static Pages -->
   <url>
-    <loc>https://freshbasket.in/</loc>
+    <loc>https://grocery-two-pi.vercel.app/</loc>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://freshbasket.in/shop</loc>
+    <loc>https://grocery-two-pi.vercel.app/shop</loc>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://freshbasket.in/categories</loc>
+    <loc>https://grocery-two-pi.vercel.app/categories</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://freshbasket.in/recipes</loc>
+    <loc>https://grocery-two-pi.vercel.app/recipes</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://freshbasket.in/blog</loc>
+    <loc>https://grocery-two-pi.vercel.app/blog</loc>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://freshbasket.in/about</loc>
+    <loc>https://grocery-two-pi.vercel.app/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://freshbasket.in/contact</loc>
+    <loc>https://grocery-two-pi.vercel.app/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <!-- 8 Grocery Categories -->
   <url>
-    <loc>https://freshbasket.in/category/fruits-vegetables</loc>
+    <loc>https://grocery-two-pi.vercel.app/category/fruits-vegetables</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://freshbasket.in/category/dairy-eggs</loc>
+    <loc>https://grocery-two-pi.vercel.app/category/dairy-eggs</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://freshbasket.in/category/atta-rice-grains</loc>
+    <loc>https://grocery-two-pi.vercel.app/category/atta-rice-grains</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://freshbasket.in/category/spices-oils</loc>
+    <loc>https://grocery-two-pi.vercel.app/category/spices-oils</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://freshbasket.in/category/snacks-packaged</loc>
+    <loc>https://grocery-two-pi.vercel.app/category/snacks-packaged</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://freshbasket.in/category/beverages-juices</loc>
+    <loc>https://grocery-two-pi.vercel.app/category/beverages-juices</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://freshbasket.in/category/bakery-breads</loc>
+    <loc>https://grocery-two-pi.vercel.app/category/bakery-breads</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://freshbasket.in/category/organic-healthy</loc>
+    <loc>https://grocery-two-pi.vercel.app/category/organic-healthy</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- 12 Complete Editorial Blog Articles -->
   <url>
-    <loc>https://freshbasket.in/blog/10-essential-grocery-items-every-indian-kitchen-should-have</loc>
+    <loc>https://grocery-two-pi.vercel.app/blog/10-essential-grocery-items-every-indian-kitchen-should-have</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://freshbasket.in/blog/how-to-keep-fruits-and-vegetables-fresh-for-longer</loc>
+    <loc>https://grocery-two-pi.vercel.app/blog/how-to-keep-fruits-and-vegetables-fresh-for-longer</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://freshbasket.in/blog/a-beginners-guide-to-healthy-grocery-shopping</loc>
+    <loc>https://grocery-two-pi.vercel.app/blog/a-beginners-guide-to-healthy-grocery-shopping</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://freshbasket.in/blog/seasonal-fruits-in-india-what-to-buy-and-when</loc>
+    <loc>https://grocery-two-pi.vercel.app/blog/seasonal-fruits-in-india-what-to-buy-and-when</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://freshbasket.in/blog/how-to-plan-a-weekly-grocery-budget</loc>
+    <loc>https://grocery-two-pi.vercel.app/blog/how-to-plan-a-weekly-grocery-budget</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://freshbasket.in/blog/organic-vs-conventional-produce-what-should-you-know</loc>
+    <loc>https://grocery-two-pi.vercel.app/blog/organic-vs-conventional-produce-what-should-you-know</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://freshbasket.in/blog/7-easy-indian-breakfast-ideas-using-everyday-groceries</loc>
+    <loc>https://grocery-two-pi.vercel.app/blog/7-easy-indian-breakfast-ideas-using-everyday-groceries</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://freshbasket.in/blog/understanding-food-labels-before-you-buy</loc>
+    <loc>https://grocery-two-pi.vercel.app/blog/understanding-food-labels-before-you-buy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://freshbasket.in/blog/smart-grocery-shopping-tips-for-busy-families</loc>
+    <loc>https://grocery-two-pi.vercel.app/blog/smart-grocery-shopping-tips-for-busy-families</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://freshbasket.in/blog/how-to-reduce-food-waste-at-home</loc>
+    <loc>https://grocery-two-pi.vercel.app/blog/how-to-reduce-food-waste-at-home</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://freshbasket.in/blog/pantry-organization-how-to-store-rice-pulses-flour-and-spices</loc>
+    <loc>https://grocery-two-pi.vercel.app/blog/pantry-organization-how-to-store-rice-pulses-flour-and-spices</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://freshbasket.in/blog/easy-healthy-snacks-you-can-make-with-everyday-ingredients</loc>
+    <loc>https://grocery-two-pi.vercel.app/blog/easy-healthy-snacks-you-can-make-with-everyday-ingredients</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>

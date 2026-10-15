@@ -29,7 +29,7 @@ export const ContactPage: React.FC = () => {
   const faqs = [
     {
       q: 'What are the delivery slots and how fast is Express Delivery?',
-      a: 'FreshBasket operates four delivery slots daily: Early Morning (07:00 AM – 10:00 AM), Afternoon (01:00 PM – 04:00 PM), Evening (06:00 PM – 09:00 PM), plus 2-Hour Express Delivery on orders placed before 8:00 PM across all operational city hubs.'
+      a: 'Kanchan Super Market operates four delivery slots daily: Early Morning (07:00 AM – 10:00 AM), Afternoon (01:00 PM – 04:00 PM), Evening (06:00 PM – 09:00 PM), plus 2-Hour Express Delivery on orders placed before 8:00 PM across all operational city hubs.'
     },
     {
       q: 'What is the minimum order value for free delivery?',
@@ -40,7 +40,7 @@ export const ContactPage: React.FC = () => {
       a: 'We offer a strict No-Questions-Asked Instant Return policy. If any fruit, leafy vegetable, or dairy item does not meet your freshness expectations upon delivery, simply notify the delivery executive immediately or tap "Report Issue" in your order summary for an instant replacement or credit refund.'
     },
     {
-      q: 'How does FreshBasket verify that produce is naturally ripened?',
+      q: 'How does Kanchan Super Market verify that produce is naturally ripened?',
       a: 'We have a zero-tolerance policy for banned chemical ripening agents such as calcium carbide or ethylene gas overdosing. All our mangoes, bananas, and papayas are either tree-ripened or matured using traditional paddy straw bedding in temperature-monitored ripening chambers.'
     },
     {
@@ -99,7 +99,7 @@ export const ContactPage: React.FC = () => {
             
             <div className="bg-white p-6 sm:p-8 rounded-3xl border border-stone-200 shadow-sm space-y-6">
               <h3 className="text-base font-bold text-stone-900">
-                FreshBasket Support Desk
+                Kanchan Super Market Support Desk
               </h3>
 
               <div className="space-y-4 text-xs text-stone-700">
@@ -109,7 +109,7 @@ export const ContactPage: React.FC = () => {
                   </div>
                   <div>
                     <span className="text-stone-400 block font-medium">Customer Toll-Free:</span>
-                    <strong className="text-stone-900 text-sm">1800-419-BASKET</strong>
+                    <strong className="text-stone-900 text-sm">1800-419-KANCHAN</strong>
                     <span className="text-[11px] text-stone-400 block">(Demo Helpline · 7 Days a week)</span>
                   </div>
                 </div>
@@ -120,7 +120,7 @@ export const ContactPage: React.FC = () => {
                   </div>
                   <div>
                     <span className="text-stone-400 block font-medium">Customer Email:</span>
-                    <strong className="text-stone-900 text-sm">care@freshbasket-demo.in</strong>
+                    <strong className="text-stone-900 text-sm">care@kanchansupermarket.com</strong>
                     <span className="text-[11px] text-stone-400 block">Response within 2 hours guaranteed</span>
                   </div>
                 </div>

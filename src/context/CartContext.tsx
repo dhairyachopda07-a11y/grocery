@@ -61,20 +61,20 @@ interface CartContextType {
 const CartContext = createContext<CartContextType | undefined>(undefined);
 
 export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  // Load persistent cart
+  // Load persistent cart with backwards compatibility migration
   const [cart, setCart] = useState<CartItem[]>(() => {
     try {
-      const saved = localStorage.getItem('freshbasket_cart');
+      const saved = localStorage.getItem('kanchan_cart') || localStorage.getItem('freshbasket_cart');
       return saved ? JSON.parse(saved) : [];
     } catch {
       return [];
     }
   });
 
-  // Load persistent wishlist
+  // Load persistent wishlist with backwards compatibility migration
   const [wishlist, setWishlist] = useState<string[]>(() => {
     try {
-      const saved = localStorage.getItem('freshbasket_wishlist');
+      const saved = localStorage.getItem('kanchan_wishlist') || localStorage.getItem('freshbasket_wishlist');
       return saved ? JSON.parse(saved) : [];
     } catch {
       return [];
@@ -96,7 +96,7 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
   // Sync cart to localStorage
   useEffect(() => {
     try {
-      localStorage.setItem('freshbasket_cart', JSON.stringify(cart));
+      localStorage.setItem('kanchan_cart', JSON.stringify(cart));
     } catch {
       // ignore
     }
@@ -105,7 +105,7 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
   // Sync wishlist to localStorage
   useEffect(() => {
     try {
-      localStorage.setItem('freshbasket_wishlist', JSON.stringify(wishlist));
+      localStorage.setItem('kanchan_wishlist', JSON.stringify(wishlist));
     } catch {
       // ignore
     }
@@ -188,7 +188,7 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   // Recalculate discount if coupon applied
   useEffect(() => {
-    if (appliedCoupon === 'FRESH100') {
+    if (appliedCoupon === 'KANCHAN100' || appliedCoupon === 'FRESH100') {
       if (subtotal >= 400) {
         setDiscountAmount(100);
       } else {
@@ -204,13 +204,13 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const applyCoupon = (code: string) => {
     const clean = code.trim().toUpperCase();
-    if (clean === 'FRESH100') {
+    if (clean === 'KANCHAN100' || clean === 'FRESH100') {
       if (subtotal < 400) {
-        return { success: false, message: 'Minimum cart value of ₹400 required for FRESH100.' };
+        return { success: false, message: 'Minimum cart value of ₹400 required for KANCHAN100.' };
       }
-      setAppliedCoupon('FRESH100');
+      setAppliedCoupon('KANCHAN100');
       setDiscountAmount(100);
-      addToast('Coupon FRESH100 applied! You saved ₹100.');
+      addToast('Coupon KANCHAN100 applied! You saved ₹100.');
       return { success: true, message: 'Coupon applied! ₹100 deducted.' };
     }
     if (clean === 'WELCOME50') {
@@ -225,7 +225,7 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
       addToast('Coupon HEALTH10 applied! 10% off your basket.');
       return { success: true, message: '10% discount applied!' };
     }
-    return { success: false, message: 'Invalid coupon code. Try FRESH100 or WELCOME50.' };
+    return { success: false, message: 'Invalid coupon code. Try KANCHAN100 or WELCOME50.' };
   };
 
   const removeCoupon = () => {

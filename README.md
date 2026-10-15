@@ -1,6 +1,6 @@
-# FreshBasket — Online Grocery Store
+# Kanchan Super Market — Online Grocery Store
 
-FreshBasket is a modern, responsive, full-featured online grocery storefront designed specifically for Indian households. Built with React, TypeScript, and Tailwind CSS, it features authentic Indian grocery products, realistic INR pricing, 2-hour express delivery options, a persistent cart, an interactive demo checkout, and a complete editorial section with 12 comprehensive food and nutrition guides.
+Kanchan Super Market is a modern, responsive, full-featured online grocery storefront designed specifically for Indian households. Built with React, TypeScript, and Tailwind CSS, it features authentic Indian grocery products, realistic INR pricing, 2-hour express delivery options, a persistent cart, an interactive demo checkout, and a complete editorial section with 12 comprehensive food and nutrition guides.
 
 ---
 
@@ -31,10 +31,10 @@ FreshBasket is a modern, responsive, full-featured online grocery storefront des
 - **Indian Recipient Validation**: 10-digit mobile number and 6-digit PIN code validation.
 - **Delivery Slots**: 2-Hour Express Delivery, Early Morning (7–10 AM), Afternoon (1–4 PM), and Evening (6–9 PM).
 - **Payment Modes**: Pay on Delivery (Cash/UPI at doorstep) and Demo Netbanking.
-- **Order Confirmation Receipt**: Unique order ID generation (`FB-XXXXXX`), confetti animation, itemized breakdown, and receipt summary.
+- **Order Confirmation Receipt**: Unique order ID generation (`KSM-XXXXXX`), confetti animation, itemized breakdown, and receipt summary.
 - *Notice*: As a demo application, no real payment credentials or financial transactions are collected or processed.
 
-### 4. FreshBasket Journal (12 Complete Articles)
+### 4. Kanchan Super Market Journal (12 Complete Articles)
 1. **10 Essential Grocery Items Every Indian Kitchen Should Have**
 2. **How to Keep Fruits and Vegetables Fresh for Longer: Storage Science**
 3. **A Beginner's Guide to Healthy Grocery Shopping: Build a Balanced Basket**
@@ -73,7 +73,7 @@ Every article includes unique metadata, real photographic imagery, reading time,
 ```bash
 # Clone the repository and navigate to the project directory
 git clone <repository-url>
-cd freshbasket
+cd kanchan-super-market
 
 # Install dependencies
 npm install
@@ -96,7 +96,7 @@ This compiles TypeScript, bundles all assets with Vite, and generates the optimi
 
 ### Deploying to Vercel
 
-FreshBasket is a standard React + Vite SPA. No special plugins or custom agent extensions are required.
+Kanchan Super Market is a standard React + Vite SPA. No special plugins or custom agent extensions are required.
 
 #### Option A: Deploy via Vercel CLI (Terminal)
 1. In your project root, run:
@@ -107,7 +107,7 @@ FreshBasket is a standard React + Vite SPA. No special plugins or custom agent e
    - **Set up and deploy?** → `Y`
    - **Which scope?** → Select your Vercel account
    - **Link to existing project?** → `N` (or `Y` if already created)
-   - **Project name?** → `freshbasket` (or press Enter)
+   - **Project name?** → `kanchan-super-market` (or press Enter)
    - **Directory located?** → `./` (press Enter)
    - **Want to modify settings?** → `N` (Vercel automatically reads `vercel.json`)
 3. For production deployment:
