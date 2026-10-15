@@ -1,0 +1,15 @@
+# FreshBasket robots.txt
+User-agent: *
+Allow: /
+Allow: /shop
+Allow: /categories
+Allow: /blog
+Allow: /recipes
+Allow: /about
+Allow: /contact
+
+# Prevent indexing of interactive checkout and cart states
+Disallow: /checkout
+Disallow: /cart
+
+Sitemap: https://freshbasket.in/sitemap.xml

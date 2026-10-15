@@ -21,6 +21,36 @@ export const ProductModal: React.FC<ProductModalProps> = ({
   const inCartQty = cartItem ? cartItem.quantity : 0;
   const isWishlisted = isInWishlist(product.id);
 
+  // Inject Schema.org Product structured data
+  React.useEffect(() => {
+    const scriptId = 'product-schema-jsonld';
+    let scriptEl = document.getElementById(scriptId) as HTMLScriptElement | null;
+    if (!scriptEl) {
+      scriptEl = document.createElement('script');
+      scriptEl.id = scriptId;
+      scriptEl.type = 'application/ld+json';
+      document.head.appendChild(scriptEl);
+    }
+    scriptEl.textContent = JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'Product',
+      'name': product.name,
+      'image': [product.image],
+      'description': product.description,
+      'offers': {
+        '@type': 'Offer',
+        'price': product.price,
+        'priceCurrency': 'INR',
+        'availability': product.inStock ? 'https://schema.org/InStock' : 'https://schema.org/OutOfStock'
+      }
+    });
+
+    return () => {
+      const el = document.getElementById(scriptId);
+      if (el) el.remove();
+    };
+  }, [product]);
+
   return (
     <div className="fixed inset-0 z-50 overflow-y-auto bg-stone-900/60 backdrop-blur-sm flex items-center justify-center p-4 sm:p-6 animate-in fade-in">
       <div 

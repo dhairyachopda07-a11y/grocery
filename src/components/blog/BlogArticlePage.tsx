@@ -33,12 +33,81 @@ export const BlogArticlePage: React.FC<BlogArticlePageProps> = ({
 
   const post = BLOG_POSTS.find(p => p.slug === slug) || BLOG_POSTS[0];
 
-  // Update document title for SEO
+  // Update document title, canonical, and Schema.org Article metadata for SEO
   useEffect(() => {
-    if (post) {
-      document.title = `${post.seoTitle} | FreshBasket Journal`;
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (!post) return;
+
+    const originalTitle = document.title;
+    const articleTitle = `${post.seoTitle} | FreshBasket Journal`;
+    document.title = articleTitle;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    // 1. Meta description
+    let descMeta = document.querySelector('meta[name="description"]');
+    const originalDesc = descMeta?.getAttribute('content') || '';
+    if (descMeta) {
+      descMeta.setAttribute('content', post.metaDescription);
     }
+
+    // 2. Canonical URL
+    let canonicalLink = document.querySelector('link[rel="canonical"]');
+    const originalCanonical = canonicalLink?.getAttribute('href') || '';
+    const currentOrigin = window.location.origin || 'https://freshbasket.in';
+    const canonicalUrl = `${currentOrigin}/blog/${post.slug}`;
+    if (canonicalLink) {
+      canonicalLink.setAttribute('href', canonicalUrl);
+    }
+
+    // 3. Open Graph Tags
+    const ogTitle = document.querySelector('meta[property="og:title"]');
+    const ogDesc = document.querySelector('meta[property="og:description"]');
+    const ogImage = document.querySelector('meta[property="og:image"]');
+    if (ogTitle) ogTitle.setAttribute('content', articleTitle);
+    if (ogDesc) ogDesc.setAttribute('content', post.metaDescription);
+    if (ogImage) ogImage.setAttribute('content', post.coverImage);
+
+    // 4. Inject Schema.org Article / BlogPosting JSON-LD
+    const scriptId = 'blog-schema-jsonld';
+    let scriptEl = document.getElementById(scriptId) as HTMLScriptElement | null;
+    if (!scriptEl) {
+      scriptEl = document.createElement('script');
+      scriptEl.id = scriptId;
+      scriptEl.type = 'application/ld+json';
+      document.head.appendChild(scriptEl);
+    }
+    scriptEl.textContent = JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'BlogPosting',
+      'headline': post.title,
+      'description': post.metaDescription,
+      'image': [post.coverImage],
+      'datePublished': post.publishedDate,
+      'author': {
+        '@type': 'Person',
+        'name': post.author.name,
+        'jobTitle': post.author.role
+      },
+      'publisher': {
+        '@type': 'Organization',
+        'name': 'FreshBasket',
+        'logo': {
+          '@type': 'ImageObject',
+          'url': 'https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1200&q=80'
+        }
+      },
+      'mainEntityOfPage': {
+        '@type': 'WebPage',
+        '@id': canonicalUrl
+      }
+    });
+
+    return () => {
+      document.title = originalTitle;
+      if (descMeta && originalDesc) descMeta.setAttribute('content', originalDesc);
+      if (canonicalLink && originalCanonical) canonicalLink.setAttribute('href', originalCanonical);
+      const el = document.getElementById(scriptId);
+      if (el) el.remove();
+    };
   }, [post]);
 
   const relatedArticles = BLOG_POSTS
